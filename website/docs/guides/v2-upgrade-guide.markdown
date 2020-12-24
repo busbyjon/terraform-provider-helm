@@ -48,7 +48,7 @@ The addition of a `type` attribute to the `set` block has rendered `set_string` 
 resource "helm_release" "redis" {
   name  = "redis"
 
-  repository_url = "https://charts.bitnami.com/bitnami"
+  repository = "https://charts.bitnami.com/bitnami"
   chart          = "redis"
 
   set {
